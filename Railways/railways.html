@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railways - Csucsus JS beadandó</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="instructions">
+        <span>
+            The goal of the game is to create a railway system that covers all the tiles, with the exception of oasis tiles. On sandy tiles you can place both straight and turning pairs of rail. On bridges, you can only place straight rails, and on mountains the rails must follow the terrain, and turn in the predetermined way. You cannot place rails on tiles on oasis tiles.
+            <br><br>To place a straight rail, click with the left mouse button, and to place a curved one, click with the right. You can rotate straight rails with the left, and curved rails with the right mouse button. Click again with the left mouse button, to remove rails.
+            <br>
+            <br>
+            Have fun!
+        </span>
+        <hr class="divider">
+        <button id="b_ok">OK</button>
+    </div>
+    <div id="menu">
+        <h1>RAILWAYS</h1>
+        <input type="text" id="name" name="user" placeholder="name">
+        <div id="menu_items">
+            <div id="diff_container">
+                <h2>Select difficulty</h2>
+                <div id="difficulties">
+                    <div class="diff_bc">
+                        <button id="b_easy" class="diff_b">5 x 5</button>
+                        <h3>Easy</h3>
+                    </div>
+                    <div class="diff_bc">
+                        <button id="b_hard" class="diff_b">7 x 7</button>
+                        <h3>Hard</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="menu_buttons">
+                <button id="b_instr">Instructions</button>
+                <button id="b_start" class="inactive">Start game</button>
+            </div>
+        </div>
+        <h3 id="error"></h3>
+    </div>
+    <div id="game_container">
+        <div id="game_info">
+            <h1>Railways</h1>
+            <div id="info">
+                <h2>Player:</h2>
+                <h3 id="pname"></h3>
+                <hr class="divider">
+                <h2>Time passed</h2>
+                <h2 id="timer">00:00</h2>
+            </div>
+        </div>
+        <table id="game_area">
+        </table>
+    </div>
+    <script type="text/javascript" src="init.js"></script>
+    <script type="text/javascript" src="levels.js"></script>
+</body>
+</html>
